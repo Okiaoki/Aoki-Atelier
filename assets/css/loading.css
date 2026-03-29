@@ -1,0 +1,70 @@
+/* ============================================
+   LOADING SCREEN
+   ============================================ */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--black, #0a0a0a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.loading-screen.hide {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.loading-brand {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--white, #f0ede8);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.loading-brand.visible {
+  opacity: 1;
+}
+
+.loading-tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--gold, #c8a96e);
+  opacity: 0;
+  transition: opacity 0.8s ease 0.3s;
+}
+
+.loading-tagline.visible {
+  opacity: 1;
+}
+
+.loading-bar {
+  width: 120px;
+  height: 1px;
+  background: rgba(200, 169, 110, 0.15);
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.loading-bar-fill {
+  width: 0;
+  height: 100%;
+  background: var(--gold, #c8a96e);
+  transition: width 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.loading-bar-fill.animate {
+  width: 100%;
+}

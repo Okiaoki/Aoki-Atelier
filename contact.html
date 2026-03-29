@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — AOKI ATELIER</title>
+  <meta name="description" content="AOKI ATELIER Contact. Inquiries, bespoke commissions, and atelier visits. Kuramae, Tokyo.">
+
+  <!-- OGP -->
+  <meta property="og:title" content="Contact — AOKI ATELIER">
+  <meta property="og:description" content="Inquiries, bespoke commissions, and atelier visits. Kuramae, Tokyo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aoki-atelier.com/contact.html">
+  <meta property="og:image" content="https://aoki-atelier.com/assets/images/common/contact-hero.jpg">
+  <meta property="og:site_name" content="AOKI ATELIER">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — AOKI ATELIER">
+  <meta name="twitter:description" content="Inquiries, bespoke commissions, and atelier visits. Kuramae, Tokyo.">
+  <meta name="twitter:image" content="https://aoki-atelier.com/assets/images/common/contact-hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/loading.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div class="loading-screen">
+    <span class="loading-brand">Aoki Atelier</span>
+    <span class="loading-tagline">The quiet radiance of imperfection</span>
+    <div class="loading-bar"><div class="loading-bar-fill"></div></div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <a href="index.html" class="header-logo">Aoki Atelier</a>
+
+    <nav class="header-nav">
+      <a href="collections.html" class="header-nav__link">Collections</a>
+      <a href="about.html" class="header-nav__link">About</a>
+      <a href="bespoke.html" class="header-nav__link">Bespoke</a>
+      <a href="contact.html" class="header-nav__link active">Contact</a>
+    </nav>
+
+    <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <a href="index.html" class="mobile-nav__link">Top</a>
+    <a href="collections.html" class="mobile-nav__link">Collections</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="bespoke.html" class="mobile-nav__link">Bespoke</a>
+    <a href="contact.html" class="mobile-nav__link">Contact</a>
+  </nav>
+
+  <main>
+
+  <!-- ========== SEC-01: PAGE HERO (Cinematic, Compact) [F] ========== -->
+  <section class="page-hero page-hero--compact">
+    <div class="page-hero__bar"></div>
+    <div class="page-hero__image-wrap">
+      <picture>
+        <source srcset="assets/images/common/contact-hero.webp" type="image/webp">
+        <img class="page-hero__image" src="assets/images/common/contact-hero.jpg" alt="Contact — Atelier Detail" width="1920" height="576">
+      </picture>
+      <div class="page-hero__overlay">
+        <h1 class="page-hero__title">Contact</h1>
+        <p class="page-hero__subtitle">We&rsquo;d love to hear from you</p>
+      </div>
+    </div>
+    <div class="page-hero__bar"></div>
+  </section>
+
+  <!-- ========== SEC-02: CONTACT FORM ========== -->
+  <section class="contact-section">
+    <div class="contact-grid">
+      <!-- Left: Info -->
+      <div class="contact-info">
+        <p class="label contact-info__label reveal">Inquiries</p>
+        <h2 class="contact-info__heading reveal">Get in touch</h2>
+        <p class="contact-info__desc reveal">
+          Whether you&rsquo;re interested in a piece from our collection, considering a bespoke commission, or simply wish to visit the atelier &mdash; we welcome your message.
+        </p>
+        <p class="text-jp contact-info__desc-jp reveal">
+          コレクション、オーダーメイド、工房見学など、<br>
+          お気軽にお問い合わせください。
+        </p>
+
+        <div class="contact-details reveal">
+          <div class="contact-details__item">
+            <span class="contact-details__label">Hours</span>
+            <span class="contact-details__value">Tue &ndash; Sat &ensp; 11:00 &ndash; 19:00</span>
+          </div>
+          <div class="contact-details__item">
+            <span class="contact-details__label">Closed</span>
+            <span class="contact-details__value">Sun, Mon, National Holidays</span>
+          </div>
+          <div class="contact-details__item">
+            <span class="contact-details__label">Email</span>
+            <span class="contact-details__value">hello@aoki-atelier.com</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" action="#" method="POST">
+          <div class="contact-form__field">
+            <label for="contact-name" class="contact-form__label">Name</label>
+            <input type="text" id="contact-name" name="name" class="contact-form__input" required autocomplete="name">
+          </div>
+
+          <div class="contact-form__field">
+            <label for="contact-email" class="contact-form__label">Email</label>
+            <input type="email" id="contact-email" name="email" class="contact-form__input" required autocomplete="email">
+          </div>
+
+          <div class="contact-form__field">
+            <label for="contact-phone" class="contact-form__label">Phone</label>
+            <input type="tel" id="contact-phone" name="phone" class="contact-form__input" autocomplete="tel">
+          </div>
+
+          <div class="contact-form__field">
+            <label for="contact-category" class="contact-form__label">Category</label>
+            <select id="contact-category" name="category" class="contact-form__input contact-form__select">
+              <option value="" disabled selected>Select a category</option>
+              <option value="ring">Ring</option>
+              <option value="necklace">Necklace</option>
+              <option value="earring">Earring</option>
+              <option value="bracelet">Bracelet</option>
+              <option value="bespoke">Bespoke Order</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="contact-message" class="contact-form__label">Message</label>
+            <textarea id="contact-message" name="message" class="contact-form__input contact-form__textarea" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="cta-btn contact-form__submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEC-03: ATELIER ACCESS ========== -->
+  <section class="contact-access">
+    <div class="contact-access__inner">
+      <div class="contact-access__text reveal">
+        <p class="label">Atelier Access</p>
+        <h2 class="contact-access__heading">Visit Us</h2>
+        <p class="contact-access__address">
+          &lang; 111-0051 &rang;<br>
+          Tokyo, Taito-ku, Kuramae 2-14-5<br>
+          Kuramae Craft Building 3F
+        </p>
+        <p class="text-jp contact-access__address-jp">
+          〒111-0051 東京都台東区蔵前2-14-5<br>
+          蔵前クラフトビル 3F
+        </p>
+        <p class="contact-access__note">
+          Toei Asakusa Line &mdash; Kuramae Station (A6 Exit), 3 min walk
+        </p>
+      </div>
+      <div class="contact-access__map">
+        <div class="contact-access__map-frame">
+          <div class="placeholder-img" style="aspect-ratio: 16/9; filter: grayscale(100%);">Google Maps &mdash; Kuramae, Tokyo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ========== SEC-04: FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-brand__name">Aoki Atelier</p>
+        <p class="footer-brand__tagline">The quiet radiance of imperfection</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="#" class="footer-links__item">Instagram</a>
+          <a href="#" class="footer-links__item">Privacy</a>
+          <a href="#" class="footer-links__item">Terms</a>
+          <a href="contact.html" class="footer-links__item">Contact</a>
+        </div>
+        <p class="footer-copyright">&copy; 2026 Aoki Atelier. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="assets/js/loading.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
